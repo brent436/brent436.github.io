@@ -1,49 +1,31 @@
-// Navagation Bar
+const lightColor = '#D0EDF1';
+const darkColor = '#406D73';
 
-const button = document.getElementsByClassName('nav-button');
+const textColor = document.getElementsByClassName('nav-button');
+const backgroundColor = document.getElementsByClassName('nav-bg');
 
-const backGround = document.getElementsByClassName('nav-bg');
+function mouseOver() {
+  for (let i = 0; i < textColor.length; i++) {
+    textColor[i].style.color = darkColor;
+  }
 
-const colorMouseOver = () => {
-  button.forEach(element => {
-    element.style.color = '#406D73';
-  });
-  backGround.forEach(element => {
-    element.style.backgroundColor = '#D0EDF1';
-  });
-};
-
-const colorMouseOut = () => {
-  button.forEach(element => {
-    element.style.color = '#D0EDF1';
-  });
-  backGround.forEach(element => {
-    element.style.backgroundColor = '#406D73';
-  });
-};
-
-button.addEventListener('mouseover', colorMouseOver());
-backGround.addEventListener('mouseover', colorMouseOver());
-
-button.addEventListener('mouseout', colorMouseOut());
-backGround.addEventListener('mouseout', colorMouseOut());
-
-/* const colorMouseOver = () => {
-  for (i = 0; i < 4; i++) {
-    button[i].style.color = '#406D73'
-    backGround[i].style.backgroundColor = '#D0EDF1'
+  for (let i = 0; i < backgroundColor.length; i++) {
+    backgroundColor[i].style.backgroundColor = lightColor;
   }
 }
 
-button.addEventListener('mouseover', colorMouseOver())
-backGround.addEventListener('mouseover', colorMouseOver())
+function mouseOut() {
+  for (let i = 0; i < textColor.length; i++) {
+    textColor[i].style.color = lightColor;
+  }
 
-const colorMouseOut = () => {
-  for (i = 0; i < 4; i++) {
-    button[i].style.color = '#D0EDF1'
-    backGround[i].style.backgroundColor = '#406D73'
+  for (let i = 0; i < backgroundColor.length; i++) {
+    backgroundColor[i].style.backgroundColor = darkColor;
   }
 }
 
-button.addEventListener('mouseout', colorMouseOut())
-backGround.addEventListener('mouseout', colorMouseOut()) */
+textColor.addEventListener('mouseover', mouseOver);
+backgroundColor.addEventListener('mouseover', mouseOver);
+
+textColor.addEventListener('mouseout', mouseOut);
+backgroundColor.addEventListener('mouseout', mouseOut);
