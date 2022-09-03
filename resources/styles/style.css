@@ -53,13 +53,21 @@ nav ul {
 
 .nav-bg {
   background-color: #406D73;
-  padding: 1rem;
+  padding: 0.75rem;
   font-family: 'Roboto', sans-serif;
 }
 
 .nav-button {
   color: #D0EDF1;
   text-decoration: none;
+}
+
+.nav-bg:hover {
+  background-color: #D0EDF1;
+}
+
+.nav-button:hover {
+  color: #406D73;
 }
 
 /* About Me */
