@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Steak Shack Customer Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Steak Shack Customer Survey Form</h1>
+    <p id="description">Please fill out this survey so that we can better serve you in the future.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email address" required>
+      <label for="number" id="number-label">Age (optional)</label>
+      <input id="number" type="number" placeholder="Enter your age" pattern="[0-9]" min="13" max="100">
+      <label for="first-heard">Where did you first hear about us?</label>
+      <select id="first-heard" name="first-heard">
+        <option value="">--Please select an option--</option>
+        <option value="print">Print media</option>
+        <option value="television">Television</option>
+        <option value="internet">Internet</option>
+        <option value="word-of-mouth">Word of mouth</option>
+        <option value="other">Other</option>
+      </select>
+      <p>How would you describe out services?</p>
+      <input name="service" type="radio" id="very-good" value="very-good">
+      <label for="very-good">Very Good</label><br>
+      <input name="service" type="radio" id="good" value="good">
+      <label for="good">Good</label><br>
+      <input name="service" type="radio" id="fair" value="fair">
+      <label for="fair">Fair</label><br>
+      <input name="service" type="radio" id="bad" value="bad">
+      <label for="bad">Bad</label><br>
+      <input name="service" type="radio" id="very-bad" value="very-bad">
+      <label for="very-bad">Very Bad</label><br>
+      <p>What about our services did you like?</p>
+      <input name="favorite" type="checkbox" id="wait-staff" value="wait-staff">
+      <label for="wait-staff">Wait Staff</label><br>
+      <input name="favorite" type="checkbox" id="food" value="food">
+      <label for="food">Food</label><br>
+      <input name="favorite" type="checkbox" id="fair-prices" value="fair-prices">
+      <label for="fair-prices">Fair Prices</label><br>
+      <input name="favorite" type="checkbox" id="prompt-service" value="prompt-service">
+      <label for="prompt-service">Prompt Service</label><br>
+      <p>Any comments or suggestions?</p>
+      <textarea id='comment' name="comment" placeholder="Enter your comment here." rows="4"></textarea>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

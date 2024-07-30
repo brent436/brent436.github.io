@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4D2DCC;
+  color: white;
+  display: block;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 32px;
+}
+
+#description {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial;
+}
+
+form {
+  background-color: #2C2A33;
+  width: 550px;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 24px;
+  font-family: Arial;
+}
+
+#name, #email, #number, #first-heard, #comment {
+  width: 100%;
+}
+
+#submit {
+  width: 100%;
+  background-color: darkolivegreen;
+  color: white;
+  font-size: 24px;
+  font-family: Arial;
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid darkolivegreen;
+}
